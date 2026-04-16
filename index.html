@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Confesiones Anónimas</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+<main class="container">
+
+<section class="card">
+
+<div class="badge">
+✨ espacio anónimo
+</div>
+
+<h1>
+Confiesa lo que no te atreves a decir
+</h1>
+
+<p class="subtitle">
+Este es un espacio seguro para expresar pensamientos, emociones o secretos.
+Tu mensaje será enviado de forma anónima.
+</p>
+
+<form id="confesionForm">
+
+<div class="input-group">
+
+<label>Tu confesión</label>
+
+<textarea
+id="mensaje"
+placeholder="Escribe aquí tu confesión..."
+required
+></textarea>
+
+</div>
+
+
+<div class="row">
+
+<div class="input-group">
+
+<label>Categoría</label>
+
+<select id="categoria">
+
+<option>Amor</option>
+<option>Amistad</option>
+<option>Familia</option>
+<option>Universidad</option>
+<option>Trabajo</option>
+<option>Random</option>
+
+</select>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Alias opcional</label>
+
+<input
+id="alias"
+type="text"
+placeholder="ej: alguien pensativo"
+/>
+
+</div>
+
+</div>
+
+
+<button class="button">
+
+Enviar confesión ✦
+
+</button>
+
+<p id="statusMsg" class="footer-note"></p>
+
+</form>
+
+<section id="lista-confesiones"></section>
+
+</section>
+
+</main>
+
+
+<!-- Supabase librería -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Configuración -->
+
+<script src="supabase-config.js"></script>
+
+<!-- Lógica -->
+
+<script src="app.js"></script>
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="app.js"></script>

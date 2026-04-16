@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Panel Admin | Confesiones</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+<main class="container">
+
+<section class="card">
+
+<div class="badge">
+🛠 panel privado
+</div>
+
+<h1>
+Confesiones recibidas
+</h1>
+
+<p class="subtitle">
+Aquí podrás ver, buscar y filtrar las confesiones enviadas por los usuarios.
+</p>
+
+
+<!-- herramientas admin -->
+
+<div class="admin-tools">
+
+<input
+type="text"
+id="buscador"
+class="admin-input"
+placeholder="Buscar por palabra, alias o categoría..."
+>
+
+<select
+id="filtroCategoria"
+class="admin-input"
+>
+
+<option value="todas">Todas las categorías</option>
+
+<option>Amor</option>
+<option>Amistad</option>
+<option>Familia</option>
+<option>Universidad</option>
+<option>Trabajo</option>
+<option>Random</option>
+
+</select>
+
+</div>
+
+
+<!-- lista -->
+
+<div
+id="listaConfesiones"
+class="confesiones-lista"
+>
+
+<p class="footer-note">
+Cargando confesiones...
+</p>
+
+</div>
+
+
+</section>
+
+</main>
+
+
+<!-- Supabase -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase-config.js"></script>
+
+<script src="admin.js"></script>
+
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="admin.js"></script>
